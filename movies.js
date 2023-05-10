@@ -145,7 +145,7 @@ function render(array){
                     </div>
                         <div class="add-watchlist" id="add-watch-container-${movie.imdbID}">
                             <img class="${darkImg()}" src="/images/add.png" data-add-watch-list="${movie.imdbID}" alt="">
-                            <p class="watchlist">Watchlist</p>
+                            <p class="watchlist" data-add-watch-list="${movie.imdbID}">Watchlist</p>
                         </div>
                         </div>` + readMore(movie.Plot, movie.imdbID)
         } else {
